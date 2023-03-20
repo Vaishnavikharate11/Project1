@@ -19,6 +19,4 @@ sum=sum-arr[i];
 System.out.println("Missing number is "+ sum);
 
 }
-
 }
-
