@@ -1,0 +1,60 @@
+package ProblemStatement;
+
+import java.util.Map;
+
+import java.util.Scanner;
+
+import java.util.TreeMap;
+
+public class Problem2nd {
+
+public static void main(String[] args)
+
+{
+
+String str = " I Love India ";
+
+String result = removeLeadingTrailingSpaces(str);
+
+System.out.println(result); // Output: "I Love India"
+
+}
+
+public static String removeLeadingTrailingSpaces(String str) {
+
+int start = 0;
+
+int end = str.length() - 1;
+
+// remove leading spaces
+
+while (start < str.length() && str.charAt(start) == ' ') {
+
+start++;
+
+}
+
+// remove trailing spaces
+
+while (end >= 0 && str.charAt(end) == ' ') {
+
+end--;
+
+}
+
+// extract the string without leading and trailing spaces
+
+String result = "";
+
+for (int i = start; i <= end; i++) {
+
+result += str.charAt(i);
+
+}
+
+return result;
+
+}
+
+}
+

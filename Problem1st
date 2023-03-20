@@ -2,7 +2,7 @@ package ProblemStatement;
 
 import java.util.Scanner;
 
-public class Q1 {
+public class Problem1st {
 
 public static void main(String args[])
 
